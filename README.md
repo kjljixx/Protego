@@ -11,3 +11,5 @@ This allows Protego to have a low false-positive and false-negative rate.
 The weighting formula for each message is: 0.95^(time in seconds since message was sent)
 
 OpenAI's [tiktoken](https://github.com/openai/tiktoken) is used to calculate message similarity
+
+Protego is hosted with [Daki](https://daki.cc/), which has a free tier.
