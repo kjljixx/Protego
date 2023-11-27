@@ -1,5 +1,5 @@
 # Protego
-An anti-spam discord bot
+An anti-spam discord bot written in discord.py
 
 Invite Link: https://discord.com/api/oauth2/authorize?client_id=1175197240130797658&permissions=8&scope=bot
 
