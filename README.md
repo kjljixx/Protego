@@ -13,3 +13,7 @@ The weighting formula for each message is: 0.95^(time in seconds since message w
 OpenAI's [tiktoken](https://github.com/openai/tiktoken) is used to calculate message similarity
 
 Protego is hosted with [Daki](https://daki.cc/), which has a free tier.
+
+# Contributing
+
+Feel free to open a pull request or an issue to suggest changes.
