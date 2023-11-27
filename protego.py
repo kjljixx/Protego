@@ -180,7 +180,7 @@ async def on_message(message : discord.Message):
     await message.channel.send("Timeouted <@"+str(message.author.id)+"> for **"+str(spamPenalty[str(message.guild.id)])+"** seconds for spamming. **"+str(numMessagesDeleted)+"** spam message(s) deleted. <@"+str(message.author.id)+"> has been timeouted for spamming **"+str(previousTimeouts[str(message.guild.id)][str(message.author.id)])+"** time(s) in this server so far, including this time.")
 
     return
-  if indiaInText(message.content, 0) and message.author.id in soorajLevelPerms:
+  if indiaInText(message.content, 0) and message.author.id in soorajLevelPerms and message.guild.id == 992514255570087977:
     if(indiaInText(message.content, 1)):
       newContent = deIndianifyText(message.content)
 
@@ -193,7 +193,7 @@ async def on_message(message : discord.Message):
       await message.reply(content="Sooraj might be trying to be sneaky and trying to loophole his way through nationalist message detection!")
 
     return
-  if indiaInText(message.content, 1) and not message.author.id in whitelistFromSayingIndiaBan:
+  if (indiaInText(message.content, 1)) and (not message.author.id in whitelistFromSayingIndiaBan) and (message.guild.id == 992514255570087977):
     newContent = deIndianifyText(message.content)
 
     mimicWebhook = await message.channel.create_webhook(name="mimic")
@@ -203,7 +203,7 @@ async def on_message(message : discord.Message):
     await message.delete()
 
     return
-  if ukInText(message.content):
+  if ukInText(message.content) and message.guild.id == 992514255570087977:
     await message.add_reaction("❤️")
 
     return
