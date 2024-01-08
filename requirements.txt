@@ -1,2 +1,4 @@
 discord
 tiktoken
+websockets
+characterai
